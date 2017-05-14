@@ -1,0 +1,152 @@
+html{
+	font-size: 12px;
+	font-family: "Times New Roman", fantasy;
+}
+
+body{
+	background: darkgrey;
+}
+
+#all{
+	padding: 6px;
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+	background: white;
+	height: 100%;
+	box-shadow: 0 0 5px black;
+	border-radius: 30%;
+}
+
+main, header, footer{
+	font-size: 2em;
+	margin: 0 auto;
+	width: 50%;
+	color: black;
+	/*text-shadow: 0.5px 0.5px 1px black;*/
+	font-style: italic;
+}
+
+main article{
+	font-style: normal;
+	text-align: justify;
+}
+
+h2{
+	font-size: 0.9em;
+}
+
+#linuxdistros{
+	display: inline-block;
+	margin: 0 0 3em 0;
+	margin: 0 auto;
+	text-align: center;
+	padding: 5px;
+	width: 100%;
+}
+
+#linuxdistros tr{
+    padding: 0;
+    list-style: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#linuxdistros tr td{
+	padding: 5px;
+  width: 2em;
+  height: 2em;
+  margin: 0 auto;
+
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+#linuxdistros tr td img{
+	max-width: 2em;
+  max-height: 2em;
+  min-width: 0.01em;
+  min-height: 0.01em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 700px){
+	*{
+		transition-duration: 0.5s;
+	}
+	#all{
+		width 98%;
+	}
+	main, header, footer{
+		width: 90%;
+	}
+
+	h1{
+		font-size: 1.5em;
+		transition-duration: 0.2s;
+		font-style: italic;
+	}
+	main > header{
+		font-size: 1.4em;
+	}
+	h2{
+		font-size: 0.8em;
+	}
+	header, footer{
+		width: 50%;
+	}
+	html{
+		font-size: 0.5em;
+	}
+}
+@media only screen and (max-width: 480px){
+	*{
+		transition-duration: 0.5s;
+	}
+	#all{
+		width 98%;
+	}
+	main, header, footer{
+		width: 90%;
+	}
+
+	h1{
+		font-size: 1em;
+		transition-duration: 0.2s;
+	}
+	main > header{
+		font-size: 0.9em;
+	}
+	h2{
+		font-size: 0.7em;
+	}
+	header, footer{
+		width: 50%;
+	}
+	html{
+		font-size: 0.5em;
+	}
+}
+@media only screen and (max-width: 380px){
+	*{
+		transition-duration: 0.5s;
+	}
+	#all{
+		width: 98.05%;
+	}
+}
