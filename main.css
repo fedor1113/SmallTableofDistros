@@ -39,7 +39,7 @@ h2{
 
 #linuxdistros{
 	display: inline-block;
-	margin: 0 0 3em 0;
+	/*margin: 0 0 3em 0;*/
 	margin: 0 auto;
 	text-align: center;
 	padding: 5px;
@@ -47,6 +47,9 @@ h2{
 }
 
 #linuxdistros tr{
+    margin: 0 auto;
+    text-align: center;
+
     padding: 0;
     list-style: none;
 
@@ -55,6 +58,7 @@ h2{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+
     width: 100%;
 
     -webkit-flex-flow: row wrap;
@@ -63,25 +67,31 @@ h2{
 }
 
 #linuxdistros tr td{
-	padding: 5px;
-  width: 2em;
-  height: 2em;
-  margin: 0 auto;
+    padding: 5px;
+    width: 2em;
+    height: 2em;
+    margin: 0 auto;
 
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+#linuxdistros tbody{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #linuxdistros tr td img{
-	max-width: 2em;
-  max-height: 2em;
-  min-width: 0.01em;
-  min-height: 0.01em;
-  margin: 0 auto;
-  text-align: center;
+    max-width: 2em;
+    max-height: 2em;
+    min-width: 0.01em;
+    min-height: 0.01em;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .dl{
@@ -153,8 +163,19 @@ h2{
 @media only screen and (max-width: 380px){
 	*{
 		transition-duration: 0.5s;
-	}
+    }
+    h1{
+        font-size: 1.2em;
+    }
 	#all{
 		width: 98.05%;
+	}
+}
+@media only screen and (min-width: 2000px){
+	*{
+		transition-duration: 0.5s;
+	}
+	#all{
+        font-size: 2em;
 	}
 }
