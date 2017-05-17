@@ -149,7 +149,7 @@ h2{
 		transition-duration: 0.5s;
 	}
 	#all{
-		width 98%;
+		width: 98%;
 	}
 	main, header, footer{
 		width: 90%;
@@ -178,7 +178,7 @@ h2{
 		transition-duration: 0.5s;
 	}
 	#all{
-		width 98%;
+		width: 98%;
         font-size: 0.8em;
 	}
 	main, header, footer{
